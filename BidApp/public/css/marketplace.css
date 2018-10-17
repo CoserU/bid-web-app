@@ -1,0 +1,30 @@
+body {
+	font-size: 30px;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.td_bid {
+	width: 100px;
+}
+
+.btn {
+	font-size: 0.8em;
+}
+
+thead {
+	text-transform: uppercase;
+}
+

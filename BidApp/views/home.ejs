@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marketplace</title>
+	<script type="text/javascript", src="/js/lib/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript", src="/js/lib/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/marketplace.css">
+</head>
+<body>
+	<div class="container">
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Bid</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			    <% assets.forEach(function(asset, index){ %>
+			        <tr>
+    					<td data-toggle="tooltip" data-placement="left" title="Some information." id=<%= "name"+index %>><%= asset.name %></td>
+    					<td>$<span id=<%= "price"+index %>><%= asset.price %></span></td>
+    					<td class="td_bid"><button type="button" class="btn btn-primary" id=<%= "button"+index %>>Bid!</button></td>
+				    </tr>
+			    <% }); %>
+			    
+			</tbody>
+		</table>
+	</div>
+
+<script type="text/javascript", src="/js/marketplace.js"></script>
+</body>
+</html>
